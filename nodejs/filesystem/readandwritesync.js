@@ -1,0 +1,6 @@
+// const fs=require('fs')
+// let data=fs.readFileSync("one.txt","utf-8")
+// console.log(data)
+const fs=require('fs')
+let data=fs.readFileSync("one.txt","utf-8")
+    fs.writeFileSync("two.txt",data)
