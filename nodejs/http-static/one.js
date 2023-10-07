@@ -52,5 +52,3 @@ fs.readFile(path.join(__dirname,"views","two.txt"),(err,data)=>{
 // const path = require('path')
 
 // console.log(path.join(__dirname))
-
-// console.log(path.join(__dirname, "viwes","two.txt"))
