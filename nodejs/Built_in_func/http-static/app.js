@@ -23,7 +23,7 @@ fs.readFile(path.join(__dirname,'views','contact.html'),'utf-8',(err,data)=>{
         }
 })
 
-server.listen(8080,'127.0.0.1',(err)=>{
+server.listen(8080,'.0.0127.1',(err)=>{
     if(err) throw err 
     console.log("Server is Running port:8080")
 })
