@@ -1,12 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <style>
+        #btn{
+            width:100px;
+            height: 100px;
+            
+            border-radius: 10px solid;
+        
+        }
+    </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
     
-    
+    <button id="btn">Button</button>
+
 </body>
+<script>
+    var btn = document.getElementById('btn');
+    btn.addEventListener('click', function(){
+        btn.textContent="click";
+    });
+    btn.addEventListener('dblclick', function(){
+        btn.textContent="dblclick"
+    });
+    btn.addEventListener('mousedown', function(){
+        btn.textContent="mousedown"
+    });
+    btn.addEventListener('mouseover', function(){
+        btn.style.background="red"
+    });
+    btn.addEventListener('mouseout', function(){
+        btn.style.background="blue"
+    });
+    btn.addEventListener('mouseup', function(){
+        btn.textContent="mouseup"
+    });
+    btn.addEventlistner("",function(){
+
+    })
+</script>
 </html>
